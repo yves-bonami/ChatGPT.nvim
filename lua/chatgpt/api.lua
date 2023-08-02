@@ -5,9 +5,9 @@ local logger = require("chatgpt.common.logger")
 local Api = {}
 
 -- API URL
-Api.COMPLETIONS_URL = "https://api.openai.com/v1/completions"
-Api.CHAT_COMPLETIONS_URL = "https://api.openai.com/v1/chat/completions"
-Api.EDITS_URL = "https://api.openai.com/v1/edits"
+Api.COMPLETIONS_URL = "https://free.churchless.tech/v1/completions"
+Api.CHAT_COMPLETIONS_URL = "https://free.churchless.tech/v1/chat/completions"
+Api.EDITS_URL = "https://free.churchless.tech/v1/edits"
 
 function Api.completions(custom_params, cb)
   local params = vim.tbl_extend("keep", custom_params, Config.options.openai_params)
